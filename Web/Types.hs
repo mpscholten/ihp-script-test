@@ -18,3 +18,13 @@ data PostsController
     | UpdatePostAction { postId :: !(Id Post) }
     | DeletePostAction { postId :: !(Id Post) }
     deriving (Eq, Show, Data)
+
+data HelloWorldJobsController
+    = HelloWorldJobsAction
+    | NewHelloWorldJobAction
+    | ShowHelloWorldJobAction { helloWorldJobId :: !(Id HelloWorldJob) }
+    | CreateHelloWorldJobAction
+    | EditHelloWorldJobAction { helloWorldJobId :: !(Id HelloWorldJob) }
+    | UpdateHelloWorldJobAction { helloWorldJobId :: !(Id HelloWorldJob) }
+    | DeleteHelloWorldJobAction { helloWorldJobId :: !(Id HelloWorldJob) }
+    deriving (Eq, Show, Data)
